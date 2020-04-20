@@ -1,5 +1,6 @@
 package com.newtondev.msscbrewery.web.model;
 
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 import lombok.AllArgsConstructor;
@@ -28,4 +29,8 @@ public class BeerDto {
 
     @Positive
     private Long upc;
+
+    private OffsetDateTime createdDate;
+    private OffsetDateTime lastUdatedDate;
+
 }
